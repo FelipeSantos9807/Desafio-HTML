@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Básico</title>
+</head>
+<body>
+    <h1>Introdução ao HTML na Prática</h1>
+    <hr/>
+    <img width="800" src="Img02.jpg">
+    <h2>Indice</h2>
+    <ul>
+        <li>
+            <a href="#INDI_01">Estrutura Básica do HTML </a>
+        </li>
+        <li>
+            <a href="#INDI_02">Falando sobre Tags </a>
+        </li>
+        <li>
+            <a href="#INDI_03">Atributos das Tags </a>
+        </li>
+        <li>
+            <a href="#INDI_04">Textos </a>
+        </li>
+        <li>
+            <a href="#INDI_05">Listas Ordenadas e Não Ordenadas </a>
+        </li>
+        <li>
+            <a href="#INDI_06">Links </a>
+        </li>
+        <li>
+            <a href="#INDI_07">Referências </a>
+        </li>
+    </ul>
+    <h2 id="INDI_01">Estrutura Básica do HTML</h2>
+        <p>A estrutura básica do HTML consiste de 3 tags, a inicial <strong>HTML</strong> dentro dela  vem <strong>HEAD e BODY</strong>.</p>
+        <p>A tag HEAD como sua tradução sujere é a <i>"cabeça"</i> da pagina onde você pode definir coisas como o titulo na tag <strong>Title</Title></strong> que será exibido na guia de navegação.</p>
+        <p>A tag BODY é o <i>"corpo"</i> da página onde ficam textos, imagens, interações com o usuário. </p>
+    <h2 id="INDI_02">Falando sobre Tags</h2>
+        <h3>Agora mais algumas Tags do HTML e suas funções:</h3>
+        <ul>
+            <li>Tag: <'i> é utilizada para deixar palavras, textos em <i>itálico</i><'/i>;</li>
+            <li>Tag: <'strong> é utilizada para deixar palavras, textos em <strong>negrito</strong><'/strong>, pode ser utilizada em conjunto com a tag <'i>;</li>
+            <li>Tag: <'mark><mark>é utilizada para marca trechos de textos</mark><'/mark>;</li>
+            <li>Tag: <'u> é utilizada para <u>sublinhar</u> uma palavra ou trecho do texto<'/u>';</li>
+            <li>Tag: <'/hr> é utilizada para traçar uma linha divisoria hotizontal.Essa tag já é fechada no inicio, pois não possui tag de fechamento;</li>
+            <li>Tag: <'small> é utilizado para fazer textos com uma <small>fonte menor</small> <'/small>;</li>
+            <li>Tag: <'sub> é utilizada para textos <sub>subscritos</sub>, um exemplo de uso seriam fórmulas químicas<'/sub>;</li>
+            <li>Tag: <'sup> é utilizada para textos <sup>sobrescritos</sup>, um exemplo de uso é a representação de ponteciação <'/sup>;</li>
+            <li>Tag: <'blockquote> é ultilizado para trechos de referencia dentro do texto exemplo: <blockquote> "<i>A <'blockquote>tag especifica uma seção citada de outra fonte.</i>"</blockquote></li>
+        </ul>
+    <h2 id="INDI_03">Atributos das Tags</h2>
+        <h3> Alguns atributos que as tags podem ter:</h3>
+        <ul>
+            <li><strong>ID=""</strong>- Atributo para identificação;</li>
+            <li><strong>Style=""</strong>-Atributo que contém informações de estilo para um documento ou uma parte do documento. As informações de estilo específico estão contidas dentro deste elemento, geralmente no CSS;</li>
+            <li><strong>Class=""</strong>-Atributo voltado para o CSS usado para padronizar configurações da classe criada;</li>
+            <h4>Atributos com usos expecificos:</h4>
+            <li><strong>type="number"</strong>-Atributo que só permite números no campo de texto;</li>
+            <li><strong>src=""</strong>-Atributo onde é colocado o Endereço de imagem;</li>
+            <li><strong>width=""</strong>-Atributo para definir largura da imagem.</li> 
+        </ul>
+    <h2 id="INDI_04">Textos</h2>
+        <h3>Tags para Textos:</h3>
+        <ul>
+           <li><strong>TAG: <'h1~h6> </strong>São divididos em níveis de titulo, subtitulo e assim em diande;</li>
+           <li><strong>TAG: <'p> </strong>É usada para definir um paragráfo, quebra de linha;</li>
+        </ul>
+    <h2 id="INDI_05">Listas Ordenadas e Não Ordenadas</h2>
+    <h3>Nesse ponto vamos ver os 2 tipos de listas e suas funções</h3>
+    <h4>Lista Ordenada</h4>
+    <p> Uma lista ordenada tem uma estrutura númerica crescente com o número de itens registrado.</p>
+    <p>Para criar uma lista Ordenada em HTML usamos a<strong> TAG <'OL></strong> e a <strong> TAG <'li> </strong>para os itens.</p>
+    <ol>
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+        <li>Terceito item</li>
+    </ol>
+    <h4>Lista Não Ordenada</h4>
+    <p>Diferente da Lista Ordenada essa lista não ordena os itens com números, mas representa os itens com um símbolo.</p>
+    <p>Para criar uma lista Não Ordenada em HTML usamos a<strong> TAG <'UL></strong> e a <strong> TAG <'li> </strong>para os itens.</p>
+    <ul>
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+        <li>Terceito item</li> 
+    </ul>
+    <p>O HTML também permite que façam uma lista dentro da outra, e mesclar os dois tipos também é possivel.</p>
+    <ol>
+        <li>Primeiro item</li>
+        <li>Segundo item
+            <ul>
+                <li>Primeiro item</li>
+                <li>Segundo item</li>
+                <li>Terceito item</li> 
+            </ul>
+        </li>
+        <li>Terceito item</li>
+    </ol>
+    <h2 id="INDI_06">Links</h2>
+    <h3>Criando Links</h3>
+    <p>Para criar links usamos a <strong>TAG: <'a> </strong> com o atributo <strong>href=""</strong> onde colocamos o endereço do site que queremos fazer a ligação:</p>
+    <p>O atributo target="_blank" faz com que o link seja aberto em outra Aba do navegador</p>
+    <p>O atributo title="Cria um pequeno texo de ao passar o mouse pelo link"</p>
+    <p>  Exemplo:<strong> <'a href="www.Google.com" title="Para pesquisar clicle aqui" target="_blank"><mark>Google</mark><'/a></strong><small> a parte grifada é a que será mostrada como link para o usuário.</small></p>
+    <p> Também é possivel criar links que vão ir para locais dentro da propria página, desde que o local tenha um id.</p>
+    <p>  Exemplo:<strong><'h3 id="T01">Titulo 01<'/h3></strong>, Para criar um link para esse local da pagina fariamos assim:</p>
+    <p> <strong> <'a href="#T01"></strong>Ir para Titilo 01<strong><'/a></strong></p>
+    <h2 id="INDI_07">Referências</h2>
+    <h3> Lista de links de referências e para aprofundamento de estudo</h3>
+    <ul>
+        <li><a href="https://www.w3schools.com/html/default.asp" target="_blank"> W³ Schools</a></li>
+        <li><a href="https://www.youtube.com/watch?v=4Gq3WW6FwVA" target="_blank">TUTORIAL BÁSICO HTML e CSS</a></li>
+        <li><a href="https://www.youtube.com/watch?v=o0UZNUuFsvA" target="_blank">Introdução ao HTML5</a></li>
+        <li><a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" target="_blank">HTLM Curso em video</a></li>
+    </ul>
+</body>
+</html>
